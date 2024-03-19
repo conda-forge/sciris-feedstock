@@ -1,5 +1,5 @@
 {% set name = "sciris" %}
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sciris-{{ version }}.tar.gz
-  sha256: f1bda24cd216882fbccc0cb376fe3fbc91373080408b4993e0fcbbe907ec6990
+  sha256: 366bf59ba978e13296a8700ceb8b7a40e34d95e43bcfb1ce9d94146d2114eec2
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
