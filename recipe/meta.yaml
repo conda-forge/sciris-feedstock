@@ -1,5 +1,5 @@
 {% set name = "sciris" %}
-{% set version = "3.2.4" %}
+{% set version = "3.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sciris-{{ version }}.tar.gz
-  sha256: 373e2dd101eab53caa32fadba4fc2d1251cb972453adab88f32686827454d7ac
+  sha256: a475f819dbaef4542686a2c201190a594e870ad1a880bf1a038d04cc8cf4247f
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
